@@ -1,22 +1,22 @@
-var nome = "Silvania Goularte Correia";
+let nome = "Silvania Goularte Correia";
 document.write(nome, "<br>");
 
 document.write("Ano - 2023<br>");
 
-var twitter = "@silvania.fake";
+let twitter = "@silvania.fake";
 document.write("Twitter: ", twitter, "<br>");
 
-var linkedin = "@silvania.fake";
+let linkedin = "@silvania.fake";
 document.write("LinkedIn: ", linkedin, "<br>");
 
-var instagram = "@silvania.fake";
+let instagram = "@silvania.fake";
 document.write("Instagram: ", instagram, "<br>");
 
-var facebook = "@silvania.fake";
+let facebook = "@silvania.fake";
 document.write("Facebook: ", facebook, "<br>");
 
-var sexo = "Feminino";
+let sexo = "Feminino";
 document.write("Sexo: ", sexo, "<br>");
 
-var polo = "Polo Sorocaba";
+let polo = "Polo Sorocaba";
 document.write("Localização: ", polo, "<br>");
