@@ -10,7 +10,34 @@
         <link rel="stylesheet" type="text/css" href="carreiraTI.css">
         <link href='https://fonts.googleapis.com/css?family=Spline Sans Mono' rel='stylesheet'>
     </head>
-    <body>
+    <body onload="hello()">
+        <script>
+            function hello(){
+                let nomeCompleto = "Sou Silvania Goularte Correia";
+                let cidadeCurso = "Sorocaba - ADS - Universidade Presbiteriana Mackenzie";
+                let saudacao = "";
+
+                var dataAtual = new Date();
+                var horaAtual = dataAtual.getHours();
+                var diaSemana = obterDiaSemana(dataAtual.getDay());
+
+                if (horaAtual >= 0 && horaAtual < 12) {
+                    saudacao = "Bom Dia!";
+                } else if (horaAtual >= 12 && horaAtual < 18) {
+                    saudacao = "Boa Tarde!";
+                } else {
+                    saudacao = "Boa Noite!";
+                }
+
+                function obterDiaSemana(dia) {
+                    let diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+                    return diasDaSemana[dia];
+                }
+                
+                var mensagem = nomeCompleto + "\n" + cidadeCurso + "\n" + saudacao + " Hoje é " + diaSemana;
+                alert(mensagem);
+            }
+        </script>
         <table class="upper">
             <tbody>          
                 <tr> 
